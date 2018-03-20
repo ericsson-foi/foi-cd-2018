@@ -1,0 +1,12 @@
+<div class="form-group">
+  <label for="name">Name</label>
+  <input type="text" class="form-control" aria-describedby="nameHelp" placeholder="Enter name" [(ngModel)]="application.name">
+  <label for="exampleInputEmail1">Email address</label>
+  <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="application.email">
+  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  <br>
+  <label for="desiredPosition">Desired position</label>
+  <input type="text" class="form-control" aria-describedby="desiredPosition" placeholder="Enter desired position" [(ngModel)]="application.position">
+  <label for="company">Company</label>
+  <input type="text" class="form-control" id="company" aria-describedby="desiredPosition" placeholder="Enter company" [(ngModel)]="application.company">
+</div>

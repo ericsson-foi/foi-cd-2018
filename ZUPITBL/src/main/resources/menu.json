@@ -1,0 +1,60 @@
+{
+	"items": [{
+		"label": "Postupci",
+		"icon": "find_in_page",
+		"routerLink": ["/"]
+	}, {
+		"label": "Potvrde",
+		"icon": "build",
+		"routerLink": ["/utils"]
+	}, {
+		"label": "Izvještaji",
+		"icon": "settings_application",
+		"items": [{
+			"label": "Sample Page",
+			"icon": "desktop_mac",
+			"routerLink": ["/sample"]
+		}, {
+			"label": "Forms",
+			"icon": "input",
+			"routerLink": ["/forms"]
+		}]
+	}, {
+		"label": "Administracija",
+		"icon": "list",
+		"items": [{
+			"label": "Data",
+			"icon": "grid_on",
+			"routerLink": ["/data"]
+		}, {
+			"label": "Panels",
+			"icon": "content_paste",
+			"routerLink": ["/panels"]
+		}, {
+			"label": "Overlays",
+			"icon": "content_copy",
+			"routerLink": ["/overlays"]
+		}, {
+			"label": "Menus",
+			"icon": "menu",
+			"routerLink": ["/menus"]
+		}, {
+			"label": "Messages",
+			"icon": "message",
+			"routerLink": ["/messages"]
+		}, {
+			"label": "Charts",
+			"icon": "insert_chart",
+			"routerLink": ["/charts"]
+		}, {
+			"label": "File",
+			"icon": "attach_file",
+			"routerLink": ["/file"]
+		}, {
+			"label": "Misc",
+			"icon": "toys",
+			"routerLink": ["/misc"]
+		}]
+	}]
+
+}
