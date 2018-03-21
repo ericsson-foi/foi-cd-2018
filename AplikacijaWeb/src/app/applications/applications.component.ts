@@ -35,6 +35,10 @@ export class ApplicationsComponent implements OnInit {
 
   }
 
+  close() {
+    this.detailOpened= false;
+  }
+
   onAddItem() {
     this.application = new Application('name', 'email', 'position', 'company1');
     this.detailOpened = true;  
