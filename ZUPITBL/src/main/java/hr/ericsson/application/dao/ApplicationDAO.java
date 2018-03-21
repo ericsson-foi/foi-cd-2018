@@ -43,8 +43,10 @@ public class ApplicationDAO {
 		return resultList;
 	}
 	
-	public void delete(final Application application) {		
-		
+	
+	public void delete(final Integer id) {		
+		SqlParameterSource parameters = new BeanPropertySqlParameterSource(id);
+		namedJdbcTemplate.update(DELETE_QUERY, parameters);
 	}
 	
 	public void update(final Application application) {		
@@ -60,6 +62,7 @@ public class ApplicationDAO {
 	}
 
 	
-	final static String INSERT_QUERY =  "INSERT INTO public.applications(name, email, position, company VALUES(:name, :email, :position, :company)";
+	final static String INSERT_QUERY =  "INSERT INTO public.applications(name, email, position, company) VALUES(:name, :email, :position, :company)";
 	final static String READ_ALL_QUERY = "SELECT id, name, email, position, company FROM public.applications";
+	final static String DELETE_QUERY = "DELETE FROM public.applications where id=:id";
 }

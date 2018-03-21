@@ -27,8 +27,11 @@ public class ApplicationService {
 		}
 		return application;
 	}
-
-
+	
+	public Integer deleteSampleType(final Integer id) {
+		applicationDAO.delete(id);
+		return id;
+	}
 	
 
 }

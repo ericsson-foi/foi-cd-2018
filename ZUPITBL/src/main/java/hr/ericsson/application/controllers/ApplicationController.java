@@ -3,6 +3,7 @@ package hr.ericsson.application.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -29,5 +30,9 @@ public class ApplicationController {
 		return applicationService.saveSampleType(application);
 	}
 
+	@RequestMapping(value = "/application/delete/{id}", method = RequestMethod.POST)
+	public Integer delete(@PathVariable Integer Id) {
+		return applicationService.deleteSampleType(Id);
+	}
 
 }
