@@ -17,11 +17,6 @@ public class ApplicationService {
 	public List<Application> getApplications() {
 		return applicationDAO.getAll();
 	}
-	
-	@Transactional
-	public void deleteApplication(final Application application) {
-		applicationDAO.delete(application);
-	}
 
 	@Transactional
 	public Application saveSampleType(final Application application) {

@@ -23,12 +23,6 @@ public class ApplicationController {
 	public List<Application> getSampleTypes() {
 		return applicationService.getApplications();
 	}
-	
-	@RequestMapping(value = "/application/delete", method = RequestMethod.POST)
-	public String delete(@RequestBody Application application) {
-		applicationService.deleteApplication(application);
-		return "{\"message\" : \"OK\"}";
-	}
 
 	@RequestMapping(value = "/application/save", method = RequestMethod.POST)
 	public Application save(@RequestBody Application application) {
